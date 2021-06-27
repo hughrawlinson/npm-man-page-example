@@ -1,0 +1,21 @@
+{
+  "name": "npm-man-page-example",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-man-page": "mkdir -p man && marked-man README.md > man/my-package.1"
+  },
+  "man": [
+    "./man/my-package.1"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "<1",
+    "marked-man": "^0.7.0"
+  }
+}
